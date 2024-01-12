@@ -2,7 +2,7 @@ version: "0.1"
 name: rag
 services:
   web:
-    image: fruoccopublic.azurecr.io/rag-webapp
+    image: tt.azurecr.io/rag-webapp:tt
     ports:
       - "8080:80"
     env_file:
