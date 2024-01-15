@@ -2,7 +2,7 @@ version: "0.1"
 name: rag
 services:
   web:
-    image: tt.azurecr.io/rag-webapp:tt
+    image: ttchatbaard.azurecr.io/rag-webapp
     ports:
       - "8080:80"
     env_file:
