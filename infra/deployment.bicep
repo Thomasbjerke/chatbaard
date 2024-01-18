@@ -148,8 +148,8 @@ param ContentSafetyName string = '${ResourcePrefix}-contentsafety'
 param newGuidString string = newGuid()
 
 var WebAppImageName = 'DOCKER|ttchatbaard.azurecr.io/rag-webapp'
-var AdminWebAppImageName = 'DOCKER|fruoccopublic.azurecr.io/rag-adminwebapp'
-var BackendImageName = 'DOCKER|fruoccopublic.azurecr.io/rag-backend'
+var AdminWebAppImageName = 'DOCKER|ttchatbaard.azurecr.io/rag-adminwebapp'
+var BackendImageName = 'DOCKER|ttchatbaard.azurecr.io/rag-backend'
 
 var BlobContainerName = 'documents'
 var QueueName = 'doc-processing'
