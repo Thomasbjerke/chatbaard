@@ -103,7 +103,7 @@ try:
         with col3:
             st.button("Reprocess all documents in the Azure Storage account", on_click=remote_convert_files_and_add_embeddings, args=(True,))
 
-    with st.expander("Add URLs to the knowledge base", expanded=True):
+    with st.expander("Add URLs to the knowledge base test", expanded=True):
         col1, col2 = st.columns([3,1])
         with col1: 
             st.text_area("Add a URLs and than click on 'Compute Embeddings'", placeholder="PLACE YOUR URLS HERE SEPARATED BY A NEW LINE", height=100, key="urls")
