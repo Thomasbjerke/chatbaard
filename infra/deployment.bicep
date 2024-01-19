@@ -120,7 +120,7 @@ param AzureCognitiveSearch string = '${ResourcePrefix}-search'
   'standard2'
   'standard3'
 ])
-param AzureCognitiveSearchSku string = 'standard'
+param AzureCognitiveSearchSku string = 'basic'
 
 @description('Azure AI Search Index')
 param AzureSearchIndex string = '${ResourcePrefix}-index'
@@ -177,7 +177,7 @@ resource OpenAI 'Microsoft.CognitiveServices/accounts@2021-10-01' = {
       }
     }
     sku: {
-      name: 'Standard'
+      name: 'Basic'
       capacity: 30
     }
   }
@@ -192,7 +192,7 @@ resource OpenAI 'Microsoft.CognitiveServices/accounts@2021-10-01' = {
       }
     }
     sku: {
-      name: 'Standard'
+      name: 'Basic'
       capacity: 30
     }
     dependsOn: [
